@@ -1,0 +1,298 @@
+/* Debugging: Create red border around every widget which supports border */
+
+/*QWidget
+{
+	border: 1px solid red;
+}*/
+
+#mainFrame {
+    background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:0.5, stop:0 rgba(16, 41, 71, 255), stop:1 rgba(20, 59, 100, 255));
+}
+
+QToolButton,
+QLabel,
+QMenuBar,
+QMenuBar::item {
+	font-family: "Arial Unicode MS";
+	background: transparent;
+	color: rgb(160, 183, 205);
+	font-size: 11px;
+}
+
+QToolButton:hover,
+QMenuBar::item:selected {
+	color: rgb(230, 236, 242);
+}
+
+#windowButtonsFrame QToolButton,
+#windowButtonsFrame QToolButton:checked {
+	border: none;
+	padding: 2px;
+	background-position: center;
+	background-repeat: none;
+}
+
+/*#windowButtonsFrame QToolButton:hover,
+#windowButtonsFrame QToolButton:checked:hover {
+	border: 1px solid rgb(70, 101, 132);
+	border-radius: 3px;
+	background-color: rgba(255, 255, 255, 40);
+}*/
+
+QToolButton#maximizeButton:checked {
+    background-image: url(:/skin/windowed.png);
+}
+
+QToolButton#maximizeButton:checked:hover {
+    background-image: url(:/skin/windowed_hover.png);
+}
+
+#resizeHandle {
+    background-image: url(:/skin/resize.png);
+}
+
+#resizeHandle:hover {
+    background-image: url(:/skin/resize_hover.png);
+}
+
+QToolButton#closeButton {
+	background-image: url(:/skin/close.png);
+}
+
+QToolButton#closeButton:hover {
+	background-image: url(:/skin/close_hover.png);
+}
+
+QToolButton#maximizeButton {
+    background-image: url(:/skin/maximize.png);
+}
+
+QToolButton#maximizeButton:hover {
+	background-image: url(:/skin/maximize_hover.png);
+}
+
+QToolButton#minimizeButton {
+    background-image: url(:/skin/minimize.png);
+}
+
+QToolButton#minimizeButton:hover {
+	background-image: url(:/skin/minimize_hover.png);
+}
+
+QMenuBar {
+	background: transparent;
+}
+
+QMenuBar::item {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background: transparent;
+}
+
+QMenu {
+	padding: 3px 0px;
+	border: 1px solid rgb(15, 41, 76);
+	background-color: rgb(74, 103, 133);
+}
+
+QMenu::item {
+	padding: 2px 6px;
+	font-family: "Arial Unicode MS";
+	font-size: 11px;
+	color: rgb(160, 183, 205);
+}
+
+QMenu::item:selected {
+	color: rgb(230, 236, 242);
+}
+
+QMenu::item:disabled {
+	color: rgb(160, 183, 205);
+	font-style: italic;
+}
+
+QMenu::separator {
+	height: 1px;
+	background-color: rgba(160, 183, 205, 80);
+	margin: 2px 1px;
+}
+
+#bottomLeftFrame,
+#bottomFrame,
+#bottomRightFrame {
+    min-height: 10px;
+    max-height: 10px;
+    background: transparent;
+}
+
+#topLeftFrame,
+#topFrame,
+#topRightFrame {
+    min-height: 5px;
+    max-height: 5px;
+    background: transparent;
+}
+
+#topLeftFrame,
+#leftFrame,
+#bottomLeftFrame,
+#topRightFrame,
+#rightFrame,
+#bottomRightFrame {
+    min-width: 10px;
+    max-width: 10px;
+    background: transparent;
+}
+
+/* Resize */
+#resizeHandle {
+	background-repeat: no-repeat;
+	background-position: top left;
+	margin: 5px;
+	min-width: 11px;
+	max-width: 11px;
+	min-height: 11px;
+	max-height: 11px;
+}
+
+QScrollBar:vertical {
+	background: transparent;
+	width: 17px;
+	margin: 22px 0 22px 0;
+}
+
+QScrollBar::handle:vertical {
+	margin: 2px;
+	background-color: rgb(20, 59, 100);
+	min-height: 20px;
+	image: url(:/skin/scrollbar_handle.png);
+}
+
+QScrollBar::handle:vertical:hover {
+	background-color: rgb(40, 79, 120);
+	image: url(:/skin/scrollbar_handle_hover.png);
+}
+
+QScrollBar::handle:vertical:disabled {
+	background: transparent;
+	image: none;
+}
+
+QScrollBar::add-line:vertical {
+	margin: 2px;
+	background-color: rgb(20, 59, 100);
+	height: 18px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+	image: url(:/skin/arrow_down.png);
+}
+
+QScrollBar::add-line:vertical:hover {
+	background-color: rgb(40, 79, 120);
+	image: url(:/skin/arrow_down_hover.png);
+}
+
+QScrollBar::add-line:vertical:disabled {
+	background: transparent;
+	image: none;
+}
+
+QScrollBar::sub-line:vertical {
+	margin: 2px;
+	background-color: rgb(20, 59, 100);
+	height: 18px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+	image: url(:/skin/arrow_up.png);
+}
+
+QScrollBar::sub-line:vertical:hover {
+	background-color: rgb(40, 79, 120);
+	image: url(:/skin/arrow_up_hover.png);
+}
+
+QScrollBar::sub-line:vertical:disabled {
+	background: transparent;
+	image: none;
+}
+
+QScrollBar::add-page:vertical, 
+QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+QDateEdit{
+	background: transparent;
+	color: rgb(230, 236, 242);
+}
+
+QComboBox {
+	background-color: rgb(20, 59, 100);
+	color: rgb(230, 236, 242);
+	border: none;
+	padding-top: 2px;
+	padding-left: 7px;
+	padding-bottom: 4px;
+}
+
+QComboBox:hover,
+QComboBox:on{
+	background-color: rgb(40, 79, 120);
+}
+
+QComboBox::drop-down {
+	height: 22px;
+	image: url(:/skin/arrow_down.png);
+}
+
+QComboBox::drop-down:hover,
+QComboBox::drop-down:on {
+	image: url(:/skin/arrow_down_hover.png);
+}
+
+QComboBox QListView{
+	padding: 3px 0px;
+	border: 1px solid rgb(15, 41, 76);
+	background-color: rgb(74, 103, 133);
+	outline: none;
+}
+
+QComboBox QListView::item {
+	padding: 2px 6px;
+	font-family: "Arial Unicode MS";
+	font-size: 11px;
+	color: rgb(160, 183, 205);
+}
+
+QComboBox QListView::item:selected {
+	color: rgb(230, 236, 242);
+	background: transparent;
+	border: none;
+}
+
+Link QLabel#linkTextLabel[mouseTracking="false"] {
+	font-family: "Arial Unicode MS";
+	background: transparent;
+	color: rgb(160, 183, 205);
+	font-size: 11px;
+}
+
+Link QLabel#linkTextLabel[mouseTracking="true"] {
+	color: rgb(230, 236, 242);
+}
+
+Link QLabel#externalLinkIcon[mouseTracking="false"] {
+	margin-top: 1px;
+	min-height: 11px;
+	min-width: 11px;
+	background-image: url(:/skin/external_link.png);
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+
+Link QLabel#externalLinkIcon[mouseTracking="true"] {
+	margin-top: 1px;
+	background-image: url(:/skin/external_link_hover.png);
+	background-repeat: no-repeat;
+	background-position: center left;
+}

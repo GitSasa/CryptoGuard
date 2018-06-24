@@ -36,20 +36,37 @@
     <ClCompile Include="CryptoGuard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CustomFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomStyleableWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="CryptoGuard.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="CustomFrame.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CustomStyleableWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="CryptoGuard.ui">
+    <QtUic Include="CustomFrame.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
   <ItemGroup>
-    <QtRcc Include="CryptoGuard.qrc">
+    <QtRcc Include="resources\skin\skin.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\skin\application.css">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

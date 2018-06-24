@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/skin">
+        <file>add_hover.png</file>
+        <file>application.css</file>
+        <file>arrow_down.png</file>
+        <file>arrow_down_hover.png</file>
+        <file>arrow_up.png</file>
+        <file>arrow_up_hover.png</file>
+        <file>close.png</file>
+        <file>close_hover.png</file>
+        <file>external_link.png</file>
+        <file>external_link_hover.png</file>
+        <file>maximize.png</file>
+        <file>maximize_hover.png</file>
+        <file>minimize.png</file>
+        <file>minimize_hover.png</file>
+        <file>resize.png</file>
+        <file>resize_hover.png</file>
+        <file>scrollbar_handle.png</file>
+        <file>scrollbar_handle_hover.png</file>
+        <file>windowed.png</file>
+        <file>windowed_hover.png</file>
+    </qresource>
+</RCC>

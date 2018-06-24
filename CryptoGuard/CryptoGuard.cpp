@@ -1,7 +1,10 @@
 #include "CryptoGuard.h"
 
-CryptoGuard::CryptoGuard(QWidget *parent)
-	: QMainWindow(parent)
+CryptoGuard::CryptoGuard(QWidget *parent, Qt::WindowFlags flags)
+	: QMainWindow(parent, flags)
 {
-	ui.setupUi(this);
+	m_customFrame = new CustomFrame(this, flags);
+	setMinimumSize(QSize(800, 500));
+	setMaximumSize(QSize(1920, 1080));
+	setCentralWidget(m_customFrame);
 }
