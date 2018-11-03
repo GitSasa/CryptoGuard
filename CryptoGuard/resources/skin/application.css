@@ -9,7 +9,14 @@
     background-color: qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:0.5, stop:0 rgba(16, 41, 71, 255), stop:1 rgba(20, 59, 100, 255));
 }
 
-QToolButton,
+QLabel {
+    font-family: "Arial Unicode MS";
+    background: transparent;
+    color: rgb(160, 183, 205);
+    font-size: 11px;
+}
+
+/*QToolButton,
 QLabel,
 QMenuBar,
 QMenuBar::item {
@@ -22,7 +29,7 @@ QMenuBar::item {
 QToolButton:hover,
 QMenuBar::item:selected {
 	color: rgb(230, 236, 242);
-}
+}*/
 
 #windowButtonsFrame QToolButton,
 #windowButtonsFrame QToolButton:checked {
@@ -79,7 +86,7 @@ QToolButton#minimizeButton:hover {
 	background-image: url(:/skin/minimize_hover.png);
 }
 
-QMenuBar {
+/*QMenuBar {
 	background: transparent;
 }
 
@@ -115,7 +122,7 @@ QMenu::separator {
 	height: 1px;
 	background-color: rgba(160, 183, 205, 80);
 	margin: 2px 1px;
-}
+}*/
 
 #bottomLeftFrame,
 #bottomFrame,

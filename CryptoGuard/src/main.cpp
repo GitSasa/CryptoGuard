@@ -1,5 +1,5 @@
-#include "CryptoGuard.h"
 #include <QtWidgets/QApplication>
+#include "GUI/CryptoGuard.h"
 
 int main(int argc, char *argv[])
 {

@@ -1,17 +1,19 @@
 #pragma once
 
-#include "CustomStyleableWidget.h"
-#include "ui_CustomFrame.h"
 #include <QtGui>
 #include <QtWidgets>
+#include "CustomStyleableWidget.h"
+#include "ui_CustomFrame.h"
 
 class CustomFrame : public CustomStyleableWidget
 {
 	Q_OBJECT
 
 public:
-	explicit CustomFrame(QWidget *parent = 0, Qt::WindowFlags flags = 0);
+	explicit CustomFrame(QWidget* parent = 0, Qt::WindowFlags flags = 0);
 	~CustomFrame();
+
+	QFrame* getContentFrame();
 
 public slots:
 	void enableMinimizeControls(bool enabled);

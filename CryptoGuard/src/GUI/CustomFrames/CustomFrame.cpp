@@ -2,7 +2,7 @@
 
 const char* CustomFrame::RESIZE_SECTION = "resizeSection";
 
-CustomFrame::CustomFrame(QWidget *parent, Qt::WindowFlags flags)
+CustomFrame::CustomFrame(QWidget* parent, Qt::WindowFlags flags)
 	: CustomStyleableWidget(parent, flags | Qt::FramelessWindowHint)
 {
 	ui.setupUi(this);
@@ -69,7 +69,12 @@ CustomFrame::CustomFrame(QWidget *parent, Qt::WindowFlags flags)
 }
 
 CustomFrame::~CustomFrame()
+{	
+}
+
+QFrame* CustomFrame::getContentFrame()
 {
+	return ui.contentFrame;
 }
 
 void CustomFrame::setMaximized(bool maximized)
